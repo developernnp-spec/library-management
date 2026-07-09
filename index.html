@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letsread.io</title>
+   <link rel="stylesheet" href="style.css">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
+
+</head>
+
+<body onload="readAll()">
+
+    <div class="cont">
+
+        <div class="box left">
+            <div class="logo-title">
+                <div class="circle-logo">
+                    <img src="/Photos/Library Logo.png" alt="">
+                </div>
+                <h1 class="logo-text">Letsread.io</h1>
+            </div>
+            <nav class="left-nav">
+                <ul>
+                    <li>
+                        <a href="index.html" class="dashboard" style="color: rgb(0, 0, 0);">DASHBOARD</a>
+                        <a href="create.html" class="create">CREATE + </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="box right">
+
+            <div class="main-nav">
+
+                <div class="search">
+                    <input type="" name="" placeholder="Search">
+                    <i class="fa-brands fa-sistrix"></i>
+                </div>
+
+                <div class="quotes">
+                    <p>
+                        <span class="red"> </span>
+                        <span style="color: rgb(119 255 0); font-size: xx-large;">B</span>ooks Are A Uniquely Portable Magic<span
+                            class="red">! </span>
+                    </p>
+                </div>
+            </div>
+            
+  <div class="table-wrapper">
+  <table border="1" width="100%" style="text-align:center;">
+    <thead style=" color:white;">
+      <tr>
+        <th>Name</th>
+        <th>Author</th>
+        <th>Category</th>
+        <th>Year</th>
+        <th>Count</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+
+    <tbody id="bookContainer"></tbody>
+    <div id="imageModal" class="modal">
+    
+    <div class="modal-box">
+        <span class="close-btn" onclick="closeModal()">✖</span>
+        <img id="modalImg">
+    </div>
+
+</div>
+
+    
+</div>
+
+  </table>
+</div>
+
+
+
+
+            <script src="script.js"></script>
+            
+</body>
+
+</html>

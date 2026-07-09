@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letsread.io</title>
+    <link rel="stylesheet" href="create.css">
+    <link rel="icon" type="image/png" href="/Photos/Library Logo.png ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+
+</head>
+
+
+<body onload="readAll()">
+    <div class="container">
+
+        <div class="box left">
+            <div class="logo-title">
+                <div class="circle-logo">
+                    <img src="/Photos/Library Logo.png" alt="">
+                </div>
+                <div>
+                    <h1 class="logo-text">Letsread.io</h1>
+                </div>
+            </div>
+            <nav class="left-nav ">
+                <ul>
+                    <li>
+                        <a href="index.html" class="dashboard" style="color: rgb(0, 0, 0);">DASHBOARD</a>
+                        <a href="create.html" class="create">CREATE + </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- <section class="for-right-bg"> -->
+        <div class="box center">
+            <div class="nav-bar ota">
+                <p><span>O</span>pen..</p>
+                
+                <p><span>T</span>ype..</p>
+                
+                <p><span>A</span>dd..!!</p>
+            </div>
+            
+
+                <div class="add-book">
+                    <p>ADD BOOKS</p>
+
+                </div>
+
+               
+
+
+           
+
+        </div>
+
+        <div class="box right">
+            <div class="nav-bar">
+                <img src="./Photos/stack-of-books.png" alt="">
+            </div>
+            <form class="createform">
+
+                <div class="form-grid">
+
+                    <!-- LABEL ROW -->
+                    <label id="a">Book Name</label>
+                    <input type="text" class="name">
+                    
+
+                    <!-- INPUT ROW -->
+                    <label id="b">Author</label>
+                    <input type="text" class="Author">
+
+                    <!-- LABEL ROW -->
+                    <label id="c">Category</label>
+                     <input type="text" class="Category">
+                    <label id="d">Year of Publish</label>
+
+                    <!-- INPUT ROW -->
+                   
+                    <input type="number" class="Year">
+
+                    <!-- LABEL ROW -->
+                    <label id="e">Available Count</label>
+                    <input type="number" class="number">
+                    <div></div> <!-- empty space -->
+
+                    <!-- INPUT ROW -->
+                    
+                    <div></div> <!-- empty space -->
+
+                    <!-- FULL WIDTH -->
+                    <div class="full">
+                        <label for="imageInput" class="upload-box">
+                            Insert Image
+                        </label>
+                        <input type="file" id="imageInput" hidden>
+                    </div>
+
+                    <div class="full">
+                        <img id="preview">
+                    </div>
+
+                </div>
+
+                <label type="button"  name="" id="" class="add-btn" onclick="add(event)" > Add </label>
+                
+
+
+
+            </form>
+            <div class="arrow-wrap">
+                <span class="arrow">›</span>
+                <span class="arrow">›</span>
+                <span class="arrow">›</span>
+            </div>
+
+        </div>
+
+
+        <script src="script.js"></script>
+</body>
+
+</html>

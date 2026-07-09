@@ -1,0 +1,533 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background-size: cover;
+    backdrop-filter: blur(2px);
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    /* height: 100vh !important; */
+}
+
+.left {
+    height: 100vh;
+    top: 20px;
+    width: 15.3%;
+    background-color: rgb(22, 25, 64);
+    padding-top: 5px;
+      /* background-image: url(/Photos/arrangement-with-books-cup-dark-background.jpg); */
+    background-size: cover;
+    background-position-x:-15px ;
+    
+}
+
+
+.logo-text{
+    padding-top: 2px ;
+}
+.circle-logo img {
+    width: 50px;
+    height: 50px;
+    margin-top: 1px;
+}
+.add-book p{
+    color: rgb(0, 0, 0) !important;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    font-size: xx-large;
+    margin: 40px 20px 0px 50px;
+    position: relative;
+    left: 495px;
+    top: -20px;
+}
+
+.logo-title {
+    display: flex;
+    align-items: center;
+    font-size: small;
+    color: aliceblue;
+    background-color: rgb(22, 25, 64);
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    top: -10px;
+    padding-top: 5px;
+    border-bottom: 0.2px solid rgb(255, 255, 255);
+    padding-bottom: 3px;
+}
+
+.left-nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.left-nav ul {
+    height: 100px;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /* background-color:rgb(60, 74, 99); */
+}
+
+.left-nav li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-top: 20px;
+}
+
+.dashboard, .create {
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    padding: 12px 24px;
+    width: 70%;
+    font-weight: 600;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    margin-left: 10px;
+}
+
+/* Dashboard Button */
+.dashboard {
+   
+   background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.dashboard:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 18px rgba(118, 75, 162, 0.4);
+    background: linear-gradient(135deg, #5a67d8, #6b46c1);
+}
+
+/* Create Button */
+.create {
+     background: linear-gradient(135deg, #2196f3, #21cbf3);
+     margin-top: 10px;
+}
+
+.create:hover {
+    transform: translateY(-3px) scale(1.03);
+     box-shadow: 0 8px 18px rgba(33, 203, 243, 0.4);
+    background: linear-gradient(135deg, #1e88e5, #00bcd4);
+}
+
+
+
+
+.center {
+    height: 100vh;
+    width: 25%;
+    background-color: rgb(175, 210, 225);
+    position: relative;
+    border-left: 1px solid rgb(255, 255, 255);
+    
+
+}
+
+
+
+/* right side */
+.right {
+    height: 100vh;
+    width: 63%;
+    background-color: rgb(175, 210, 225);
+    overflow-y: auto;
+}
+label{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    font-weight: bolder;
+    position: relative;
+    top: 12px;
+    left: 70px;
+    
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    position: relative;
+    top: 30%;
+}
+
+form input,
+::placeholder {
+    height: 21px;
+    text-align: center;
+    margin: 5px 0px 5px 0;
+    border-radius: 25px;
+    padding: 10px;
+    font-size: large;
+    cursor: pointer;
+    background-color: rgb(228, 225, 221);
+    color: rgb(0, 0, 0);
+
+}
+.add-btn {
+    border: 1px solid black;
+    height: 25px;
+    width: 200px ;
+    text-align: center;
+    position: relative;
+    top: 60px;
+    left: 161px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all 0.3s cubic-bezier(0.4,0,0.2,1);
+     background: linear-gradient(135deg, #000000, #00bcd4);
+    color: white;
+    cursor: pointer;
+}
+
+/* default text */
+.add-btn p {
+    font-size: small;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+/* hover OR active (click) effect */
+.add-btn:hover{
+    
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* make sure icon + text inherit color */
+.add-btn i,
+.add-btn p {
+    transition: 0.3s ease;
+    color: inherit;
+}
+.upload-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px !important;
+    border: 2px dashed #ccc;
+    cursor: pointer;
+    margin-top: 10px;
+    background: #f5f5f5;
+    border: 1px dashed black;
+    border-radius: 10px;
+    width: 150px;
+}
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0px 15px ;
+  padding-top: 40px;
+ 
+}
+
+/* labels */
+.form-grid label {
+  font-weight: bold;
+}
+
+/* inputs */
+.form-grid input {
+  padding: 8px;
+  border-radius: 6px;
+  border: 2px solid #ff0000;
+  text-align: left;
+  font-family: 'Times New Roman', Times, serif;
+   margin-bottom: 20px;
+}
+input:focus{
+    outline-color: rgb(0, 0, 0);
+}
+
+/* full width elements */
+.full {
+  grid-column: span 2;
+}
+.upload-box {
+    display: inline-block;
+    background: #eee;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* hover effect ONLY for upload label */
+.upload-box:hover {
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid red;
+    color: black;
+    
+    transform: scale(0.95);
+}
+
+/* upload box */
+.upload-box {
+  height: 120px;
+  border: 2px dashed #aaa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* preview */
+#preview {
+  width: 15%;
+  max-height: 160px;
+  object-fit: contain;
+  position: absolute;
+  top: 340px;
+  left: 300px;
+}
+
+
+.arrow-wrap {
+  display: flex;
+  gap: 5px;
+  font-size: 35px;
+  color: #000000;
+  position: fixed;
+  left: 830px;
+  top: 495px;
+  opacity: 0.2;
+  pointer-events: none;
+}
+
+/* ONLY AFTER UPLOAD */
+.arrow-wrap.active {
+  opacity: 1;
+  pointer-events: auto;
+}
+#btnsave{
+    text-decoration: none;
+}
+
+/* default OFF */
+.arrow {
+  display: inline-block;
+  animation: none;
+}
+
+/* when active → start animation */
+.arrow-wrap.active .arrow {
+  animation: moveArrow 0.8s linear infinite;
+}
+
+/* SIMPLE STRAIGHT MOVE */
+@keyframes moveArrow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(12px);
+  }
+}
+.createform{
+    top: 70px;
+    
+}
+input{
+    padding: 0px;
+    margin-top: 0px !important;
+    
+}
+.nav-bar{
+    background-color: rgb(22, 25, 64);
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    color: white;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    justify-content: end;
+
+}
+.nav-bar p{
+    margin: 0px 5px;
+    font-family: 'Times New Roman', Times, serif; 
+    font-size: x-large;
+}
+.nav-bar span{
+    font-size: xx-large;
+    color: yellow;
+}
+.nav-bar img{
+    height: 50px;
+    padding-right: 20px;
+}
+.ota{
+    /* background-color: #1e88e5; */
+    padding-right: 100px;
+}
+/* =========================================================
+   RESPONSIVE STYLES (added for mobile / tablet / desktop)
+   Nothing above this line was changed — these rules only
+   ADD behaviour for smaller screens via @media queries.
+========================================================= */
+
+/* ---- Tablets / small laptops ---- */
+@media (max-width: 1024px) {
+  .left { width: 20%; }
+  .center { width: 30%; }
+  .right { width: 50%; }
+
+  .add-book p {
+    left: 20%;
+  }
+
+  .arrow-wrap {
+    left: 60%;
+  }
+
+  #preview {
+    left: 22%;
+  }
+}
+
+/* ---- Tablets (portrait) / large phones ---- */
+@media (max-width: 900px) {
+  body {
+    overflow: auto !important;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .left, .center, .right {
+    width: 100%;
+    height: auto;
+    min-height: unset;
+  }
+
+  .left {
+    padding-bottom: 15px;
+  }
+
+  .left-nav ul {
+    height: auto;
+  }
+
+  .left-nav li {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    gap: 10px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+  }
+
+  .dashboard, .create {
+    width: auto;
+  }
+
+  .center {
+    padding: 20px 0;
+  }
+
+  .add-book p {
+    position: static;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: 20px auto;
+  }
+
+  .nav-bar {
+    justify-content: center;
+  }
+
+  .createform {
+    top: 0;
+  }
+
+  form {
+    width: 90%;
+    margin: 20px auto 0;
+    top: 0;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+    padding-top: 20px;
+  }
+
+  label {
+    position: static;
+    left: 0;
+    top: 0;
+    margin-bottom: 4px;
+    display: block;
+  }
+
+  .add-btn {
+    position: static;
+    display: block;
+    margin: 20px auto;
+    left: auto;
+    top: auto;
+  }
+
+  #preview {
+    position: static;
+    display: block;
+    margin: 10px auto;
+    width: 60%;
+    left: auto;
+    top: auto;
+  }
+
+  .arrow-wrap {
+    position: static;
+    justify-content: center;
+    margin: 10px auto;
+    opacity: 1;
+  }
+}
+
+/* ---- Phones ---- */
+@media (max-width: 480px) {
+  .logo-text {
+    font-size: 20px;
+  }
+
+  .add-book p {
+    font-size: large;
+  }
+
+  .form-grid input {
+    font-size: medium;
+  }
+
+  .upload-box {
+    width: 100%;
+  }
+
+  #preview {
+    width: 80%;
+  }
+
+  .add-btn {
+    width: 80%;
+  }
+}

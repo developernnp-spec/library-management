@@ -1,0 +1,468 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    
+        font-family: "Times New Roman", Times, serif !important;
+   
+    
+}
+.logo-text {
+    font-family: "Freckle Face";
+    font-size: 26px !important;   /* adjust if needed */
+    font-weight: 700 !important;
+    color: white !important;
+    margin-top: 12px;
+    font-family: serif !important;
+    
+}
+.main-nav{
+    width: 100%;
+    height: 60px;
+    background-color: rgb(22, 25, 64);
+    /* background-image: url(/Photos/boy-girl-reading-book.png); */
+    background-size: 110px;
+    background-repeat: no-repeat;
+    background-position-x: 950px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.quotes{
+  
+
+  color: pink;
+  position: relative;
+  top: 15px;
+  left: 495px;
+  display: inline-block;
+  
+}
+.search span{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.search{
+
+    display: inline-flex;
+    position: relative;
+    left: 450px;
+    padding: 7px;  
+    top: 4%;
+    
+}
+.search input{
+    height: 40px;
+    border-radius: 20px;
+    padding:10px ;
+    width: 370px;
+    cursor: pointer;
+    
+}
+.search i{
+    font-size: larger;
+    position: relative;
+    top: 10px;
+    left: -23px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+.red{
+    color: rgb(255, 255, 255);
+}
+.quotes p{
+    color: rgb(238, 255, 0);
+    font-size: x-large;
+    
+
+     /* text-decoration: underline wavy rgb(3, 217, 255) 2px; */
+   
+}
+ .space{
+    margin-left: 110px;
+ }
+
+.cont{
+    display: flex;
+    width: 100%;
+}
+.left{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 15%;
+    background-color: rgb(22, 25, 64);
+    height: 100vh;
+    /* background-image: url(/Photos/arrangement-with-books-cup-dark-background.jpg); */
+    background-size: cover;
+    background-position-x:-15px ;
+    padding-top: 5px;
+    border-right: 1px solid rgb(255, 255, 255);
+}
+
+
+.right {
+    margin-left: 15%;
+    min-height: 100vh;
+    width: 85%;
+    background-color: rgb(175, 210, 225);
+}
+
+
+/* left side work */
+.circle-logo img{
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+.logo-title {
+    display: flex;
+    /* align-items: center; */
+    font-size: small;
+    font-style: normal;
+    color: aliceblue;
+    background-color: rgb(22, 25, 64);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    border-bottom: 1px solid rgb(255, 255, 255);
+    height: 60px;
+    position: relative;
+    top: -5px;
+    /* padding-top: 8px; */
+}
+.left-nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+.left-nav ul{
+    height: 100px;
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+   /* background-color:rgb(60, 74, 99); */
+}
+.left-nav li{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-top: 20px;
+}
+.dashboard, .create {
+    font-family: 'Times New Roman', Times, serif;
+    display: inline-block;
+    padding: 12px 24px;
+    width: 89%;
+    font-weight: 600;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    margin-left: 10px;
+}
+
+/* Dashboard Button */
+.dashboard {
+   
+   background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+.dashboard:hover {
+    transform: translateY(-3px) scale(1.03);
+    box-shadow: 0 8px 18px rgba(118, 75, 162, 0.4);
+    background: linear-gradient(135deg, #5a67d8, #6b46c1);
+}
+
+/* Create Button */
+.create {
+     background: linear-gradient(135deg, #2196f3, #21cbf3);
+     margin-top: 10px;
+}
+
+.create:hover {
+    transform: translateY(-3px) scale(1.03);
+     box-shadow: 0 8px 18px rgba(33, 203, 243, 0.4);
+    background: linear-gradient(135deg, #1e88e5, #00bcd4);
+}
+table {
+  border-collapse: collapse;
+  
+  border: 2px rgb(0, 0, 0) solid;
+}
+th{
+   font-size: larger;
+   
+}
+th, td {
+  padding: 10px;
+ 
+}
+
+tbody tr {
+  background: transparent;
+  font-size: large;
+}
+
+button {
+  padding: 5px 10px;
+  margin: 2px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.update-btn {
+  background-color: lightgreen;
+}
+
+
+.edit-btn {
+    background-color: #4CAF50; /* green */
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-btn:hover {
+    background-color: #45a049;
+}
+
+.delete-btn {
+    background-color: #f44336; /* red */
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* BACKGROUND */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.9);
+
+    overflow: hidden; /* 🔥 enables scroll */
+}
+
+/* CENTER BOX */
+.modal-box {
+    margin: 50px auto;
+    width: fit-content;
+    max-width: 90%;
+    text-align: center;
+    position: relative;
+}
+
+/* IMAGE */
+#modalImg {
+    max-width: 100%;
+    height: 90vh;
+    box-sizing: border-box;
+     object-fit: contain;
+    border-radius: 10px;
+  
+}
+
+/* CLOSE BUTTON */
+.close-btn {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: red;
+    color: white;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.view-btn{
+  background-color: rgb(143, 101, 101);
+  color: white;
+}
+.table-wrapper {
+   
+    
+    margin-top: -23px;
+}
+
+/* TABLE STYLE */
+table {
+    width: 95%;
+    border-collapse: collapse;
+    margin-top: 50px;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+th{
+   background-color: #216079;
+
+}
+
+/* FIX HEADER */
+thead th {
+    position: sticky;
+    top: 58px;
+    padding: 10px;
+   
+    z-index: 10;
+}
+
+/* BODY ROWS */
+tbody tr {
+    background-color: rgb(175, 210, 225);
+    
+}
+
+/* CELL SPACING */
+th, td {
+    padding: 10px;
+    text-align: center;
+}
+
+/* =========================================================
+   RESPONSIVE STYLES (added for mobile / tablet / desktop)
+   Nothing above this line was changed — these rules only
+   ADD behaviour for smaller screens via @media queries.
+========================================================= */
+
+/* ---- Tablets / small laptops ---- */
+@media (max-width: 1024px) {
+  .search {
+    left: 220px;
+    width: 300px;
+  }
+  .search input {
+    width: 260px;
+  }
+  .quotes {
+    left: 230px;
+  }
+}
+
+/* ---- Tablets (portrait) / large phones ---- */
+@media (max-width: 900px) {
+  .cont {
+    flex-direction: column;
+  }
+
+  .left {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: unset;
+    padding-bottom: 10px;
+  }
+
+  .right {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .left-nav ul {
+    height: auto;
+  }
+
+  .left-nav li {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    gap: 10px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    flex-wrap: wrap;
+  }
+
+  .dashboard, .create {
+    width: auto;
+    margin: 5px;
+  }
+
+  .main-nav {
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 0;
+    background-color: rgb(22, 25, 64);
+  }
+
+  .search {
+    position: static;
+    left: 0;
+    top: 0;
+    width: 90%;
+    margin: 8px auto;
+    justify-content: center;
+  }
+
+  .search input {
+    width: 100%;
+  }
+
+  .quotes {
+    position: static;
+    left: 0;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding: 5px 10px;
+  }
+
+  thead th {
+    top: 0;
+  }
+
+  .table-wrapper {
+    overflow-x: auto;
+    margin-top: 10px;
+  }
+
+  table {
+    min-width: 600px;
+  }
+}
+
+/* ---- Phones ---- */
+@media (max-width: 480px) {
+  .logo-text {
+    font-size: 20px !important;
+  }
+
+  .quotes p {
+    font-size: medium;
+  }
+
+  .search input {
+    height: 35px;
+  }
+
+  th, td {
+    padding: 6px;
+    font-size: 14px;
+  }
+
+  .edit-btn, .delete-btn, .view-btn {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+
+  #modalImg {
+    height: 70vh;
+  }
+}
